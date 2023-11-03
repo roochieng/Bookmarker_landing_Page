@@ -1,47 +1,56 @@
-{% extends 'layout.html' %}
-{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>YouTube BookMarker</title>
+        <link rel="stylesheet" href="../static/css/table_styles.css">
+        <nav class="top-navbar">
 
+            <div class="home-link">
+                <a href="{{url_for('guide')}}"> Guide</a>
+                <a href="{{url_for('about')}}"> About</a>
+                <a href="{{url_for('features')}}"> Features</a>
+            </div>
+        </nav>
+        
 
-<img src="../static/images/image.PNG" alt="Enjoy Nature">
-<div class="landing_page">
-    <div class="highlight">
-        <p>Concentrate on what you are doing now and save that important video to watch later without loosing a sweat.</p>
-    </div>
-    <div class="stress">
-        <p>Forget about the headache of saving YouTube videos for watch later!</p>
-    </div>
-</div>
-<div class="more_details">
-    <div class="signup">
-        <p><a href="{{url_for('guide')}}">Learn More</a></p>
-    </div>
-</div>
+    </head>
+    <body class="content-above-footer">
+        <img src="image.PNG" alt="Enjoy Nature">
+        <div class="landing_page">
+            <div class="highlight">
+                <p>Concentrate on what you are doing now and save that important video to watch later without loosing a sweat.</p>
+            </div>
+            <div class="stress">
+                <p>Forget about the headache of saving YouTube videos for watch later!</p>
+            </div>
+        </div>
+        <div class="more_details">
+            <div class="signup">
+                <p><a href="{{url_for('guide')}}">Learn More</a></p>
+            </div>
+        </div>
 
-<div class="landing_page">
-    <div>
-        <p>
-            Add Bookmark
-        </p>
-        <img src="../static/images/bookmark.PNG" alt="Add bookmark" width="600px" height="200px">
-    </div>
+        <div class="landing_page">
+            <div>
+                <p>
+                    Add Bookmark
+                </p>
+                <img src="bookmark.PNG" alt="Add bookmark" width="600px" height="200px">
+            </div>
 
-    <div class="landing_dashboard">
-        <p>
-            Then find the bookmarks in Dashboard! Just click on the video name to watch it on YouTube.
-        </p>
-        <img src="../static/images/dashboard.PNG" alt="Add bookmark" width="600px" height="200px">
-    </div>
-</div>
-<div class="more_details">
-    <div class="delete">
-        <p>You can delete a bookmarked video anytime you want.</p>
-    </div>
-</div>
-
-
-</body>
-
-</body>
-
-
-{% endblock %}
+            <div class="landing_dashboard">
+                <p>
+                    Then find the bookmarks in Dashboard! Just click on the video name to watch it on YouTube.
+                </p>
+                <img src="dashboard.PNG" alt="Add bookmark" width="600px" height="200px">
+            </div>
+        </div>
+        <div class="more_details">
+            <div class="delete">
+                <p>You can delete a bookmarked video anytime you want.</p>
+            </div>
+        </div>
+    </body>
+</html>
