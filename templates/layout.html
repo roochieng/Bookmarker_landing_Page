@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>YouTube BookMarker</title>
+        <link rel="stylesheet" href="../static/css/table_styles.css">
+        <nav class="top-navbar">
+
+            <div class="home-link">
+                <a href="{{url_for('guide')}}"> Guide</a>
+                <a href="{{url_for('about')}}"> About</a>
+                <a href="{{url_for('features')}}"> Features</a>
+            </div>
+        </nav>
+        
+
+    </head>
+    <body class="content-above-footer">
+        {% block body %}{% endblock %}
+    </body>
+    <footer class="disclaimer">
+        Disclaimer: This is not a YouTube competitor, 
+        and we are not promoting any form of piracy. All 
+        the rights of the videos belong to YouTube and 
+        Video owners. We are just complementing YouTube in 
+        this case.
+    </footer>
+</html>
