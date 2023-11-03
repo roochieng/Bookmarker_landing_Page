@@ -3,7 +3,7 @@ from Bookmarker_landing_Page.config import app
 
 @app.route("/")
 def landing():
-    return render_template("landing_page.html")
+    return render_template("index.html")
 
 
 @app.route("/guide")
