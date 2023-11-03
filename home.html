@@ -1,16 +1,26 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>YouTube BookMarker</title>
+        <link rel="stylesheet" href="table_styles.css">
+        <nav class="top-navbar">
 
-{% block body %}
-<head>
-    <link rel="stylesheet" href="../static/css/table_styles.css">
-</head>
-<body>
-    <p>Welcome to YouTube BookMarker!</p>
-    <div class="detail">
-        <p class="last_five">Here is a table of your last five Bookmarks.</p>
-        <p>You can easily watch them by clicking the video names.</p>
-    </div>
+            <div class="home-link">
+                <a href="guide"> Guide</a>
+                <a href="about"> About</a>
+                <a href="features"> Features</a>
+            </div>
+        </nav>
+    </head>
+    <body class="content-above-footer">
+        <p>Welcome to YouTube BookMarker!</p>
+        <div class="detail">
+            <p class="last_five">Here is a table of your last five Bookmarks.</p>
+            <p>You can easily watch them by clicking the video names.</p>
+        </div>
 
-</body>
+    </body>
 
-{% endblock %}
+</html>

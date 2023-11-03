@@ -1,46 +1,62 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>YouTube BookMarker</title>
+        <link rel="stylesheet" href="table_styles.css">
+        <nav class="top-navbar">
 
-{% block body %}
-<head>
-    <link rel="stylesheet" href="../static/css/table_styles.css">
-</head>
-<body>
-    <h1 class="register">Features</h1>
-    <div>
-        <h2>
-            Here are the Features the YouTube Video Bookmarker currently has:
-        </h2>
+            <div class="home-link">
+                <a href="guide"> Guide</a>
+                <a href="about"> About</a>
+                <a href="features"> Features</a>
+            </div>
+        </nav>
+        
 
-            <div class="feature">
-                User account creation and login
-            </div>
-            <img src="../static/images/login.PNG" alt="login">
-            <div class="feature">
-                Adding bookmark
-            </div>
-            <p class="no_decoration"> This is the feature enabling user to save a video</p>
-            <img src="../static/images/bookmark.PNG" alt="bookmark">
-            <div class="feature">
-                User watching the bookmarked video at anytime
-            </div>
-            <p class="no_decoration"> User clicks on the video name to open the video in YouTube</p>
-            <img src="../static/images/dashboard.PNG" alt="dashboard">
-            <div class="feature">
-                Users are able to delete a video.
-            </div>
-            <p class="no_decoration"> When done, user clicks on the delete button to delete the bookmark.</p>
-            <img src="../static/images/delete.PNG" alt="delete">
-            <div class="feature">
-                Users cannot duplicate bookmarks.
-            </div>
-            <img src="../static/images/no_duplicate.PNG" alt="Enjoy Nature">
-            <div class="feature">
-                Users passwords are hashed to ensure security.
-            </div>
+    </head>
+    <body class="content-above-footer">
+    <head>
+        <link rel="stylesheet" href="table_styles.css">
+    </head>
+    <body>
+        <h1 class="register">Features</h1>
+        <div>
+            <h2>
+                Here are the Features the YouTube Video Bookmarker currently has:
+            </h2>
+
+                <div class="feature">
+                    User account creation and login
+                </div>
+                <img src="login.PNG" alt="login">
+                <div class="feature">
+                    Adding bookmark
+                </div>
+                <p class="no_decoration"> This is the feature enabling user to save a video</p>
+                <img src="bookmark.PNG" alt="bookmark">
+                <div class="feature">
+                    User watching the bookmarked video at anytime
+                </div>
+                <p class="no_decoration"> User clicks on the video name to open the video in YouTube</p>
+                <img src="dashboard.PNG" alt="dashboard">
+                <div class="feature">
+                    Users are able to delete a video.
+                </div>
+                <p class="no_decoration"> When done, user clicks on the delete button to delete the bookmark.</p>
+                <img src="delete.PNG" alt="delete">
+                <div class="feature">
+                    Users cannot duplicate bookmarks.
+                </div>
+                <img src="no_duplicate.PNG" alt="Enjoy Nature">
+                <div class="feature">
+                    Users passwords are hashed to ensure security.
+                </div>
 
 
-    </div>
+        </div>
 
-</body>
+    </body>
 
-{% endblock %}
+</html>
